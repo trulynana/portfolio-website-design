@@ -54,6 +54,15 @@ export const projects: Project[] = [
     tags: ['p5.js', 'Node.js', 'C++', 'Arduino UNO R4'],
     liveUrl: 'https://patchwork.framer.website/',
   },
+  {
+    title: 'Book Reviewer',
+    context: 'RIT Coursework',
+    period: 'Apr 2025',
+    description:
+      'An Android app for searching books in real time through the Open Library API and writing reviews for them, with a ViewModel-driven state layer and navigation drawer between screens.',
+    tags: ['Kotlin', 'Jetpack Compose', 'Retrofit', 'Open Library API'],
+    repoUrl: 'https://github.com/trulynana/BookReviewer',
+  },
 ]
 
 export type Degree = {
