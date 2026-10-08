@@ -1,5 +1,5 @@
 import { SectionHeading } from '@/components/section-heading'
-import { skills } from '@/lib/site'
+import { skillGroups } from '@/lib/site'
 
 export function AboutSection() {
   return (
@@ -16,16 +16,25 @@ export function AboutSection() {
         </div>
         <div className="md:col-span-2">
           <h3 className="mb-4 font-mono text-sm text-foreground">Tools I work with</h3>
-          <ul className="flex flex-wrap gap-2">
-            {skills.map((skill) => (
-              <li
-                key={skill}
-                className="rounded-md border border-border bg-card px-3 py-1.5 text-sm text-card-foreground"
-              >
-                {skill}
-              </li>
+          <div className="flex flex-col gap-5">
+            {skillGroups.map((group) => (
+              <div key={group.label}>
+                <h4 className="mb-2 text-xs font-medium tracking-wide text-primary uppercase">
+                  {group.label}
+                </h4>
+                <ul className="flex flex-wrap gap-2" aria-label={group.label}>
+                  {group.items.map((skill) => (
+                    <li
+                      key={skill}
+                      className="rounded-md border border-border bg-card px-3 py-1.5 text-sm text-card-foreground"
+                    >
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </section>

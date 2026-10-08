@@ -5,15 +5,23 @@ export const profile = {
   linkedin: 'https://linkedin.com/in/nana-sarpong/',
 }
 
-export const skills = [
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
-  'REST & GraphQL APIs',
-  'SQL & NoSQL Databases',
-  'Cloud & DevOps',
-  'System Design',
+export const skillGroups = [
+  {
+    label: 'Languages',
+    items: ['Java', 'JavaScript', 'TypeScript', 'Python', 'Dart', 'Kotlin', 'C#', 'C++', 'HTML5', 'CSS3'],
+  },
+  {
+    label: 'Frameworks',
+    items: ['React', 'Node.js', 'Express.js', 'Flutter', 'p5.js'],
+  },
+  {
+    label: 'Developer Tools',
+    items: ['Git', 'GitHub', 'VS Code', 'Visual Studio', 'PyCharm'],
+  },
+  {
+    label: 'Operating Systems',
+    items: ['Windows', 'macOS', 'Android'],
+  },
 ]
 
 export type Project = {

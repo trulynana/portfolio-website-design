@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowUpRight, Mail } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { profile } from '@/lib/site'
@@ -10,7 +11,8 @@ export function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 -top-40 mx-auto h-80 max-w-3xl rounded-full bg-primary/15 blur-3xl"
       />
-      <div className="relative mx-auto flex max-w-5xl flex-col gap-8 px-6 pt-24 pb-20 md:pt-32 md:pb-28">
+      <div className="relative mx-auto flex max-w-5xl flex-col-reverse gap-12 px-6 pt-24 pb-20 md:flex-row md:items-center md:pt-32 md:pb-28">
+      <div className="flex flex-1 flex-col gap-8">
         <p className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1 font-mono text-xs text-secondary-foreground">
           <span className="size-2 rounded-full bg-primary" aria-hidden="true" />
           Open to opportunities
@@ -47,6 +49,19 @@ export function Hero() {
             <ArrowUpRight aria-hidden="true" />
             <span className="sr-only">(opens in a new tab)</span>
           </a>
+        </div>
+      </div>
+        <div className="shrink-0">
+          <div className="relative size-40 overflow-hidden rounded-full border-4 border-primary/30 shadow-lg ring-1 ring-border md:size-64">
+            <Image
+              src="/images/nana-sarpong.jpg"
+              alt="Portrait of Nana Sarpong"
+              fill
+              priority
+              sizes="(min-width: 768px) 256px, 160px"
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
