@@ -48,6 +48,16 @@ export function Hero() {
             <ArrowUpRight aria-hidden="true" />
             <span className="sr-only">(opens in a new tab)</span>
           </a>
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(buttonVariants({ variant: 'outline', size: 'lg' }), 'h-11 px-5 text-base')}
+          >
+            GitHub
+            <ArrowUpRight aria-hidden="true" />
+            <span className="sr-only">(opens in a new tab)</span>
+          </a>
         </div>
       </div>
       </div>

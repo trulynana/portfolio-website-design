@@ -41,6 +41,21 @@ export function ContactSection() {
               <span className="sr-only">(opens in a new tab)</span>
             </a>
           </li>
+          <li>
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 rounded-xl bg-primary-foreground/10 p-4 outline-none transition-colors hover:bg-primary-foreground/20 focus-visible:ring-3 focus-visible:ring-primary-foreground/60"
+            >
+              <ArrowUpRight className="size-5 shrink-0" aria-hidden="true" />
+              <span className="flex min-w-0 flex-col">
+                <span className="text-sm opacity-80">GitHub</span>
+                <span className="truncate font-medium">github.com/trulynana</span>
+              </span>
+              <span className="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
