@@ -3,6 +3,7 @@ export const profile = {
   role: 'Full Stack Engineer',
   email: 'sarpong.nana@northeastern.edu',
   linkedin: 'https://linkedin.com/in/nana-sarpong/',
+  github: 'https://www.github.com/trulynana',
 }
 
 export const skillGroups = [

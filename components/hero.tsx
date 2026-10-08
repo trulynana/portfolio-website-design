@@ -26,9 +26,10 @@ export function Hero() {
           <p className="text-2xl font-medium text-primary md:text-3xl">{profile.role}</p>
         </div>
         <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty">
-          I build reliable, end-to-end web applications — from thoughtful interfaces to
-          scalable APIs and data layers. Currently pursuing a Master of Science in Software
-          Engineering Systems.
+          I build end-to-end interactive applications that push alternative engineering and
+          emerging technology forward — from thoughtful, responsive interfaces to scalable APIs
+          and data layers. Currently pursuing a Master of Science in Software Engineering
+          Systems.
         </p>
         <div className="flex flex-wrap gap-3">
           <a
@@ -45,6 +46,16 @@ export function Hero() {
             className={cn(buttonVariants({ variant: 'outline', size: 'lg' }), 'h-11 px-5 text-base')}
           >
             LinkedIn
+            <ArrowUpRight aria-hidden="true" />
+            <span className="sr-only">(opens in a new tab)</span>
+          </a>
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(buttonVariants({ variant: 'outline', size: 'lg' }), 'h-11 px-5 text-base')}
+          >
+            GitHub
             <ArrowUpRight aria-hidden="true" />
             <span className="sr-only">(opens in a new tab)</span>
           </a>
