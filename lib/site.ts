@@ -14,14 +14,6 @@ export const skillGroups = [
     label: 'Frameworks',
     items: ['React', 'Node.js', 'Express.js', 'Flutter', 'p5.js'],
   },
-  {
-    label: 'Developer Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Visual Studio', 'PyCharm'],
-  },
-  {
-    label: 'Operating Systems',
-    items: ['Windows', 'macOS', 'Android'],
-  },
 ]
 
 export type Project = {
