@@ -26,7 +26,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </span>
         <span className="size-2 rounded-full bg-primary/60 transition-colors group-hover:bg-primary" aria-hidden="true" />
       </div>
-      <h3 className="text-xl font-semibold text-card-foreground">{project.title}</h3>
+      <div className="flex flex-col gap-1">
+        <h3 className="text-xl font-semibold text-card-foreground">{project.title}</h3>
+        <p className="text-sm text-muted-foreground">
+          {project.context}
+          <span aria-hidden="true">{' · '}</span>
+          <span className="font-mono text-xs">{project.period}</span>
+        </p>
+      </div>
       <p className="flex-1 leading-relaxed text-muted-foreground">{project.description}</p>
       <ul className="flex flex-wrap gap-2" aria-label="Technologies">
         {project.tags.map((tag) => (
